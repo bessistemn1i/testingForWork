@@ -1,0 +1,31 @@
+// Base styles
+// Setup your baseline, selection and links
+// =================================================================================
+
+/* 	SELECTION
+	----------------- */
+	html{
+		font-size: 100%;
+	}
+	body *{
+		transition: all .2s linear;
+	}
+/* 	LINKS
+	----------------- */
+a {
+	color: $linkColor;
+	text-decoration: none;
+	&:visited {
+		color: $linkColor;
+	}
+	&:hover {
+		color: $linkHover;
+		text-decoration: underline;
+	}
+	&:focus {
+	color: $linkActive;
+	}
+	&:active{
+		color: $linkActive;
+	}
+}

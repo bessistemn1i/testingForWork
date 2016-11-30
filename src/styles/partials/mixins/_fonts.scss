@@ -1,0 +1,21 @@
+// Fonts & @font-face mixins
+// Author	: Satrya - @msattt
+// URL		: http://tokokoo.com
+// =================================================================================
+
+// Font mixins
+// ------------------
+ // Global font
+@mixin ff-text{
+	font-family: $ptserif;
+}
+// Heading font
+@mixin ff-heading {
+	font-family: $ptserif;
+}
+@mixin ff-decorative{
+	font-family: $coursive;
+}
+@mixin ff-mono{
+	font-family: $consolas;
+}

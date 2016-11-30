@@ -1,0 +1,49 @@
+// Media Queries
+// pros @Aris_FM
+// =================================================================================
+
+//$big			: 1600px;
+//$smallerThanDefault:1169px;
+//$bigMedium		: 970px;
+//$medium			: 599px;
+//$mediumSmall	: 488px;
+//$small			: 319px;
+//@mixin respond-to($media){
+//@if $media == ipad {
+//		@media screen and (max-width:$big) { @content; }
+//	}
+//
+//	@else if $media == tablet {
+//		@media screen and (max-width:$bigMedium) { @content; }
+//	}
+//
+//	@else if $media == smartphone {
+//		@media screen and (max-width:$medium) { @content; }
+//	}
+//	
+//	@else if $media == phone {
+//		@media screen and (max-width:$mediumSmall) { @content; }
+//	}
+//	@else if $media == pocketPhone {
+//		@media screen and (max-width:$small) { @content; }
+//	}
+//	@else if $media == smallerThanDefault {
+//		@media screen and (max-width: $smallerThanDefault) {@content;}
+//	}
+//}
+//	How To Use It:
+//	.foo {
+//		float: left;
+//		width: 1000px;
+//	
+//		@include responsive(ipad) {
+//			float: none;
+//			width: 600px;
+//		}
+//		@include responsive(tablet) {
+//			width: 480px;
+//		}
+//		@include responsive(smartphone) {
+//			width: 280px;
+//		}
+//	}
