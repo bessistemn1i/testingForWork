@@ -11,6 +11,7 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	compass = require('gulp-compass'),
 	changed = require('gulp-changed'),
+	nunjucksRender = require('gulp-nunjucks-render'),
 	reload = browserSync.reload;
 
 var path = {
@@ -20,20 +21,23 @@ var path = {
 		styles: 'build/styles/',
 		img: 'build/img/',
 		fonts: 'build/fonts/',
+		bgImg: 'build/styles/bg-img'
 	},
 	src: {
-		html: 'src/*.html',
+		html: 'src/app/pages/**/*.+(html|njk)',
 		js: 'src/js/main.js',
 		styles: 'src/styles/main.scss',
 		img: 'src/img/**/*.*',
 		fonts: 'src/fonts/**/*.*',
+		bgImg: 'src/styles/bg-images/**/*.*'
 	},
 	    watch: {
-        html: 'src/**/*.html',
+        html: 'src/app/**/*.+(html|njk)',
         js: 'src/js/**/*.js',
         styles: 'src/styles/**/*.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        bgImg: 'src/styles/bg-images/**/*.*'
     },
 	clean: '.build'
 };
@@ -51,8 +55,10 @@ gulp.task('webserver', function(){
 	browserSync(config);
 });
 gulp.task('html:build', function(){
-	gulp.src(path.src.html)
-	.pipe(rigger())
+	return gulp.src(path.src.html)
+	.pipe(nunjucksRender({
+		path: ['src/app/templates']
+	}))
 	.pipe(gulp.dest(path.build.html)) 
 	.pipe(reload({stream: true}));
 });
@@ -89,6 +95,17 @@ gulp.task('image:build', function(){
 	.pipe(gulp.dest(path.build.img))
 	.pipe(reload({stream: true}));
 });
+gulp.task('bgImg:build', function () {
+	gulp.src(path.src.bgImg)
+	.pipe(imagemin({
+		progressive: true,
+		svgoPlugins: [{removeViewBox: false}],
+		use: [pngquant()],
+		interlaced: true
+	}))
+	.pipe(gulp.dest(path.build.bgImg))
+	.pipe(reload({stream: true}));
+});
 gulp.task('fonts:build', function(){
 	gulp.src(path.src.fonts)
 	.pipe(gulp.dest(path.build.fonts))
@@ -98,7 +115,8 @@ gulp.task('build', [
 	'js:build',
 	'styles:build',
 	'fonts:build',
-	'image:build'
+	'image:build',
+	'bgImg:build'
 ]);
 gulp.task('watch', function(){
     watch([path.watch.html], function(event, cb) {
@@ -112,6 +130,9 @@ gulp.task('watch', function(){
     });
     watch([path.watch.img], function(event, cb) {
         gulp.start('image:build');
+    });
+    watch([path.watch.bgImg], function (event, cb) {
+    	gulp.start('bgImg:build');
     });
     watch([path.watch.fonts], function(event, cb) {
         gulp.start('fonts:build');

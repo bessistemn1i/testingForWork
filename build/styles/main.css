@@ -384,7 +384,6 @@ header, hgroup, nav, section, summary, label {
 
 audio, canvas, video {
   display: -moz-inline-stack;
-  -moz-box-orient: vertical;
   display: inline-block;
   *display: inline;
   vertical-align: top;
@@ -1381,7 +1380,6 @@ body {
 	-------------------- */
 .iblock {
   display: -moz-inline-stack;
-  -moz-box-orient: vertical;
   display: inline-block;
   *display: inline;
   vertical-align: top;
