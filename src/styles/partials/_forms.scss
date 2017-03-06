@@ -58,9 +58,6 @@ legend {
 		&:hover{
 			background: #999;
 		}
-		@include respond-to(tablet){
-			font-size: 14px;
-		}
 	}
 
 input{

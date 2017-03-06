@@ -12,6 +12,7 @@ var gulp = require('gulp'),
 	compass = require('gulp-compass'),
 	changed = require('gulp-changed'),
 	nunjucksRender = require('gulp-nunjucks-render'),
+	data = require('gulp-data'),
 	reload = browserSync.reload;
 
 var path = {
@@ -56,6 +57,9 @@ gulp.task('webserver', function(){
 });
 gulp.task('html:build', function(){
 	return gulp.src(path.src.html)
+	.pipe(data(function(){
+		return require('./src/app/data.json')
+	}))
 	.pipe(nunjucksRender({
 		path: ['src/app/templates']
 	}))

@@ -14,5 +14,8 @@
     "normalize-scss": "^3.0.3",
     "jquery-rcrumbs": "^1.1.0",
     "susy": "^2.2.12"
+  },
+  "devDependencies": {
+    "Scut": "scut#^1.4.0"
   }
 }
