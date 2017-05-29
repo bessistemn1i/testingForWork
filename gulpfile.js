@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps'),
 	rigger = require('gulp-rigger'),
 	cssmin = require('gulp-clean-css'),
-	imagemin = require('gulp-imagemin'),
+	imagemin = require('gulp-image-optimization'),
 	pngquant = require('imagemin-pngquant'),
 	browserSync = require('browser-sync'),
 	compass = require('gulp-compass'),
@@ -70,7 +70,7 @@ gulp.task('js:build', function(){
 	gulp.src(path.src.js)
 	.pipe(rigger())
 	.pipe(sourcemaps.init())
-	//.pipe(uglify())
+	.pipe(uglify())
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest(path.build.js))
 	.pipe(reload({stream: true}));
@@ -83,7 +83,11 @@ gulp.task('styles:build', function(){
 		css: 'build/styles/',
 		sass: 'src/styles/'
     }))
-	.pipe(prefixer())
+	.pipe(prefixer({
+		browsers: ['last 2 versions'],
+		cascade: true
+	}))
+	.pipe(cssmin())
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest(path.build.styles))
 	.pipe(reload({stream:true}));
@@ -92,6 +96,7 @@ gulp.task('image:build', function(){
 	gulp.src(path.src.img)
 	.pipe(imagemin({
 		progressive: true,
+		optimizationLevel: 5,
 		svgoPlugins: [{removeViewBox: false}],
 		use: [pngquant()],
 		interlaced: true
