@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps'),
 	rigger = require('gulp-rigger'),
 	cssmin = require('gulp-clean-css'),
-	imagemin = require('gulp-image-optimization'),
+	imagemin = require('gulp-imagemin'),
 	pngquant = require('imagemin-pngquant'),
 	browserSync = require('browser-sync'),
 	compass = require('gulp-compass'),
@@ -92,7 +92,7 @@ gulp.task('styles:build', function(){
 	.pipe(gulp.dest(path.build.styles))
 	.pipe(reload({stream:true}));
 });
-gulp.task('image:build', function(){
+gulp.task('img:build', function(){
 	gulp.src(path.src.img)
 	.pipe(imagemin({
 		progressive: true,
@@ -124,7 +124,7 @@ gulp.task('build', [
 	'js:build',
 	'styles:build',
 	'fonts:build',
-	'image:build',
+	'img:build',
 	'bgImg:build'
 ]);
 gulp.task('watch', function(){
@@ -138,7 +138,7 @@ gulp.task('watch', function(){
         gulp.start('js:build');
     });
     watch([path.watch.img], function(event, cb) {
-        gulp.start('image:build');
+        gulp.start('img:build');
     });
     watch([path.watch.bgImg], function (event, cb) {
     	gulp.start('bgImg:build');
