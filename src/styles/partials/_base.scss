@@ -11,19 +11,6 @@
 /* 	LINKS
 	----------------- */
 a {
-	color: $linkColor;
+	color: #fff;
 	text-decoration: none;
-	&:visited {
-		color: $linkColor;
-	}
-	&:hover {
-		color: $linkHover;
-		text-decoration: underline;
-	}
-	&:focus {
-	color: $linkActive;
-	}
-	&:active{
-		color: $linkActive;
-	}
 }
