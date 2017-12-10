@@ -1,7 +1,21 @@
 <header>
-	<div class="header-container">
-			<div class="navigation">
+	<div class="header-top">
+		<a href="#" class="logo">
+			<picture>
+				<source media="(max-width: 767px)" srcset="../../img/logo/lajka-black.png">
+  				<source media="(max-width: 1199px)" srcset="../../img/logo/lajka-black@2x.png">
+  				<source media="(min-width: 1200px)" srcset="../../img/logo/lajka-black@3x.png" alt="logo">
+  				<img src="../../img/logo/lajka-black.png" alt="">
+			</picture>
+
+		</a>
+		<div class="navigation">
 			{% include "../partials/navigation.njk"  %}
-		</div>	
-	</div>
+		</div>
+	</div>	
+	<div class="header-content">
+		<h1>Пользовательские решения виртуальной реальности</h1>
+		<h2>Используйте конкурентные преимущества вашей отрасли</h2>
+		<button class="send">Обратитесь в службу</button>
+	</div>	
 </header>

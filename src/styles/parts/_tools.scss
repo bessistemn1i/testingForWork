@@ -1,0 +1,66 @@
+.tools{
+	font-family: 'Roboto';
+	text-align: center;
+	padding: 53px 0px;
+	h2{
+	  font-size: 24px;
+	  font-weight: 500;
+	  line-height: 1.25;
+	  color: #333333;
+	}
+	h3{
+	  font-size: 16px;
+	  line-height: 1.5;
+	  text-align: center;
+	  color: #8a8a8a;
+	  font-weight: 400;
+	  margin-bottom: 38px;
+	}
+	h4, p{
+		max-width: 240px;
+		margin: 0 auto;
+	}
+	.tool-block{
+		img{
+			display: block;
+			border: solid 2px #e6e6e6;
+			border-radius: 50%;
+			padding: 20px;
+			margin: 0 auto;
+			margin-bottom: 25px;
+		}
+		h4{
+		  font-size: 16px;
+		  line-height: 1.5;
+		  padding-bottom: 12px;
+		}
+		p{
+		  font-size: 14px;
+		  line-height: 1.29;
+		  color: #8a8a8a;
+		  padding-bottom: 50px;
+		}
+	}
+	.about-technology{
+		p{
+			max-width: 315px;
+			margin: 0 auto;
+			font-size: 16px;
+			line-height: 1.5;
+			text-align: center;
+			color: #8a8a8a;	
+		}
+	}
+	#carousel{
+		width:900px;
+  		height:250px;
+  		position:relative;
+  		clear:both;
+  		overflow:hidden;
+  		margin:0 auto;
+  		img {
+  		visibility:hidden; /* hide images until carousel positions them */
+  		cursor:pointer;
+		}
+	}
+}

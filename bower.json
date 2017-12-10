@@ -15,6 +15,7 @@
     "susy": "^2.2.12"
   },
   "devDependencies": {
-    "Scut": "scut#^1.4.0"
+    "Scut": "scut#^1.4.0",
+    "slick-carousel": "^1.8.1"
   }
 }

@@ -6,6 +6,7 @@
 @import "compass/css3";
 @import "..//../bower_components/normalize-scss/_normalize.scss";
 @import "partials/mixins/_helper.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
 /*
 * Custom
 */
@@ -36,3 +37,11 @@
 /* Navigation styles */
 
 @import "partials/_navigation";
+
+/* Slider styles */
+
+@import "parts/_slider.scss";
+
+/* Tools styles */
+
+@import "parts/_tools.scss";
