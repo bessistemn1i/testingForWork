@@ -1,12 +1,12 @@
 	header{
 		position: relative;
-		@include susy-media(320px 375px){
+		@media(min-width: 240px){
 			background-image: url(../../img/logo/bg/youtube-2560-x-1440-laika-03-copy.png);
 		}
-		@include susy-media(376px 1199px){
+		@media(min-width: 376px){
 			background-image: url(../../img/logo/bg/youtube-2560-x-1440-laika-03-copy@2x.png);
 		}
-		@include susy-media(1200px){
+		@media(min-width: 1200px){
 			background-image: url(../../img/logo/bg/youtube-2560-x-1440-laika-03-copy@3x.png);
 		}
 	.header-top{
@@ -24,7 +24,7 @@
 		  color: #ffffff;
 			padding-top: 103px;
 			padding-bottom: 160px;
-		  @include susy-media(max-width 375px){
+		  @media(min-width: 240px){
 		  	h1, h2{
 		  		max-width: 315px;
 				margin: 0 auto;
