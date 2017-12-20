@@ -17,4 +17,16 @@
 	line-height: 1.5;
 	font-weight: 300;
   }
+  .oval{
+    #read, #seen, #feel{
+      height: 228px;
+      width: 228px;
+      svg{
+        filter: drop-shadow( 0px -2px 4px #000);
+      }
+    }
+  }
+}
+.testing-block{
+  height: 1000px;
 }
