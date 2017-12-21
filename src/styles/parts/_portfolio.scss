@@ -49,5 +49,39 @@
 			padding: 15px 0px;
   			box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.1);
 		}
+		.portfolio-video{
+			width: 100%;
+			video{
+				width: 100%;
+			}
+			.vjs-big-play-button{
+				width: 64px;
+				height: 64px;
+				border-radius: 50%;
+				background: #fff;
+				color: #e62ea8;
+				position: relative;
+				margin-top: -6px;
+				margin-left: -32px;
+				top: 38%;
+				span{
+					display: none;
+				}
+				&:before{
+					content: '\e801';
+					font-family: 'fontello';
+					position: absolute;
+					width: 34px;
+					height: 45px;
+					top: 50%;
+					margin-top: -22.5px;
+					left: 50%;
+					margin-left: -15.5px;
+				}
+				&:hover, &:focus{
+					background: none;
+				}
+			}
+		}
 	}
 }

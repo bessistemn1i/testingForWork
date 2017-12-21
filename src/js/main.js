@@ -3,6 +3,7 @@
 //= ../../bower_components/jQuery-viewport-checker/dist/jquery.viewportchecker.min.js
 //= ../../bower_components/slick-carousel/slick/slick.js
 //= ../../bower_components/swiper/dist/js/swiper.js
+//= ../../bower_components/videojs/video.js
 /* Custom*/
 $(document).ready(function(){
 	// menu-icon
@@ -170,6 +171,22 @@ $(document).ready(function(){
 	items.slice(0, total).show();
     $(this)[total >= items.length ? 'hide' : 'show']();
 }).click();
+
+	// VideoJS
+
+	var videos = document.getElementsByTagName('video');
+	for (i = 0; i < videos.length; i++){
+		var video = videos[i];
+		if(video.className.indexOf('video-js') > - 1){
+			videojs(video.id,{
+				controls: true,
+				autoplay: false,
+				preload: 'auto',
+				flued: true,
+				height: 200
+			});
+		}
+	}
 });
 
 

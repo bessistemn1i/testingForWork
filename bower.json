@@ -15,7 +15,8 @@
     "susy": "^3.0.1",
     "swiper": "^4.0.7",
     "progressbar.js": "^1.0.1",
-    "jQuery-viewport-checker": "^1.8.8"
+    "jQuery-viewport-checker": "^1.8.8",
+    "videojs": "^6.6.0"
   },
   "devDependencies": {
     "Scut": "scut#^1.4.0",
