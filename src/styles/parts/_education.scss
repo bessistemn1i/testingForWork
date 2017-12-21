@@ -1,8 +1,9 @@
 .education-wrapper{
 	font-family: 'Roboto';
-  	background-color: #289ceb;
-  	color: #ffffff;
+  background-color: #289ceb;
+  color: #ffffff;
 	text-align: center;
+  padding: 78px 0px 65px 0px;
   h2,h3{
   	display: block;
   	margin: 0 auto;
@@ -18,11 +19,38 @@
 	font-weight: 300;
   }
   .oval{
+    margin-top: 67px;
+    &:first-child{
+      margin-top: 0;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      margin-top: 23px;
+    }
     #read, #seen, #feel{
       height: 228px;
       width: 228px;
+      margin: 0 auto;
       svg{
         filter: drop-shadow( 0px -2px 4px #000);
+      }
+      span{
+        font-size: 39.5px;
+        position: absolute;
+        top: 50%;
+        margin-top: -23px;
+        margin-left: 15px;
+      }
+      .progressbar-text{
+        font-size: 50.5px;
+        line-height: 0.75;
+        margin-left: -15px;
       }
     }
   }

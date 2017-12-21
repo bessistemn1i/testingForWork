@@ -30,7 +30,12 @@ body{
       }
     }
     .education{
-      @media(min-width: 240){
+      @media(min-width: 240px){
+        width: span(100%);
+      }
+    }
+    .portfolio{
+      @media(min-width: 240px){
         width: span(100%);
       }
     }
