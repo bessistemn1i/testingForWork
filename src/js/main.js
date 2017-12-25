@@ -4,6 +4,7 @@
 //= ../../bower_components/slick-carousel/slick/slick.js
 //= ../../bower_components/swiper/dist/js/swiper.js
 //= ../../bower_components/videojs/video.js
+//= ../../bower_components/readmore-js/readmore.js
 /* Custom*/
 $(document).ready(function(){
 	// menu-icon
@@ -158,10 +159,6 @@ $(document).ready(function(){
 });
 
 	// Portfolio
-	var descr = $('.descr');
-	$('.read-more').on('click', function() {
-		$('.read-more').slideDown();
-	});
 	var items = $('.item'),
 		per = 3,
 		i = 1,
@@ -171,6 +168,16 @@ $(document).ready(function(){
 	items.slice(0, total).show();
     $(this)[total >= items.length ? 'hide' : 'show']();
 }).click();
+
+
+	// Read more block
+
+	$('.descr').readmore({
+		speed: 500,
+		collapsedHeight: 50,
+		moreLink: '<a class="read-more" href="#">Read more</a>',
+		lessLink: '<a class="read-more" href="#">Read more</a>'
+	});
 
 	// VideoJS
 
@@ -185,6 +192,12 @@ $(document).ready(function(){
 				flued: true,
 				height: 200
 			});
+		$('.descr').readmore({
+			speed: 500,
+			collapsedHeight: 25,
+			moreLink: '<a class="read-more" href="#">Read more</a>',
+			lessLink: '<a class="read-more" href="#">Read more</a>'
+		});
 		}
 	}
 });

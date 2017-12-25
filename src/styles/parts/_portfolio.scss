@@ -26,6 +26,7 @@
 		  font-weight: 400;
 		  line-height: 1.5;
 		  color: #212121;
+		  padding-top: 18px;
 		}
 		.descr{
 			font-size: 14px;
@@ -35,10 +36,13 @@
 			font-weight: 400;
 			display: block;
 			margin: 0 auto;
-			max-height: 45px;
+			transition: height .5s;
 			overflow: hidden;
+			margin-top: 15px;
+			max-width: 315px;
 		}
 		.read-more{
+			display: block;
 			width: 100%;
 			font-size: 14px;
 			line-height: 1.29;
