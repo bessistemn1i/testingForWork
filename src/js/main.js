@@ -6,7 +6,8 @@
 //= ../../bower_components/videojs/video.js
 //= ../../bower_components/readmore-js/readmore.js
 /* Custom*/
-$(document).ready(function(){
+$(document).ready(function() {
+	
 	// menu-icon
 
 	$('.nav-icon').click(function(){
@@ -158,26 +159,42 @@ $(document).ready(function(){
 	}
 });
 
+		// Portfolio
+	
+	var items = $('.portfolio-wrapper .item').css({
+  		height: 0,
+  		position: 'absolute',
+  		overflow: 'hidden',
+  		padding: 0
+	});
+
 	// Portfolio
 	var items = $('.item'),
 		per = 3,
 		i = 1,
 		total = 0;
-	$('.load-more').on('click', function(){
+	$('.portfolio-wrapper .send').on('click', function(){
 	total = per * (i++);
-	items.slice(0, total).show();
+
+	items.slice(0, total).css({
+  		height: 'inherit',
+  		position: 'static',
+  		overflow: 'visible',
+  		padding: 'inherit'
+	});
     $(this)[total >= items.length ? 'hide' : 'show']();
 }).click();
 
+	// Portfolio read more button
 
-	// Read more block
-
-	$('.descr').readmore({
-		speed: 500,
-		collapsedHeight: 50,
-		moreLink: '<a class="read-more" href="#">Read more</a>',
-		lessLink: '<a class="read-more" href="#">Read more</a>'
-	});
+		if ($('.item').css('display') == 'none' || $('.item').css('display') == 'block') {
+			$('.descr').readmore({
+				speed: 500,
+				collapsedHeight: 25,
+				moreLink: '<a class="read-more" href="#">Read more</a>',
+				lessLink: '<a class="read-more" href="#">Read less</a>'
+			});
+		}
 
 	// VideoJS
 
@@ -192,16 +209,9 @@ $(document).ready(function(){
 				flued: true,
 				height: 200
 			});
-		$('.descr').readmore({
-			speed: 500,
-			collapsedHeight: 25,
-			moreLink: '<a class="read-more" href="#">Read more</a>',
-			lessLink: '<a class="read-more" href="#">Read more</a>'
-		});
 		}
 	}
 });
-
 
 
 

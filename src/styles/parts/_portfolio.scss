@@ -18,7 +18,6 @@
 		font-weight: 400;
 	}
 	.item{
-		display: none;
 		background-color: #fff;
 		position: relative;
 		h4{
@@ -87,5 +86,9 @@
 				}
 			}
 		}
+	}
+	.send{
+		min-width: 315px;
+		text-transform: capitalize;
 	}
 }

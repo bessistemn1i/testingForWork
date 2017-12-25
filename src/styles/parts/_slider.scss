@@ -38,13 +38,14 @@
 					padding-bottom: 38px;
 					font-weight: 300;
 				}
-				.send{
-					background-color: #fff;
-					color: #f3b;
-					margin-bottom: 57px;
-					max-width: 315px;
-					padding: 14px 68px;
-				}
+			}
+			.send{
+				background-color: #fff;
+				color: #f3b;
+				margin: 0px auto 57px auto;
+				max-width: 315px;
+				min-width: 240px;
+				display: block;
 			}
 		}
 	}
