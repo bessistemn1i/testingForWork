@@ -1,3 +1,54 @@
-footer{
-
+.footer-wrapper{
+	background-color: #333;
+	padding: 50px 0px 37px 0px;
+		footer{
+		max-width: 315px;
+		font-family: 'Roboto';
+		text-align: center;
+		color: #cccccc;
+		font-size: 16px;
+		font-weight: 300;
+		margin: 0 auto;
+		h6{
+		font-size: 16px;
+		font-weight: 300;
+		margin: 0;
+		}
+		ul{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+		list-style: none;
+			li{
+				display: inline-block;
+				margin-left: 15px;
+				text-align: center;
+				a{
+					position: relative;
+					&:after{
+						content: '';
+						width: 1px;
+						position: absolute;
+						top: 4px;
+						right: -7px;
+						background-color: #ccc;
+						height: 15px;
+					}
+				}
+				&:first-child{
+					margin-left: -6px;
+				}
+				&:last-child{
+					margin: 0 auto;
+					a{
+						&:after{
+						content: none;
+						}
+					}
+				}
+			}
+		}
+	}
 }

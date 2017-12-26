@@ -9,6 +9,9 @@
   		background-blend-mode: multiply;
   		}
   		.slide{
+  			@media(min-width: 240px) and(max-width: 375px){
+  				
+  			}
 			.slide-content{
 				padding: 20px 0px 0px 30px;
 				h5, h4, p{

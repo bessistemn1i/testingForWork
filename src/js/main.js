@@ -164,8 +164,7 @@ $(document).ready(function() {
 	var items = $('.portfolio-wrapper .item').css({
   		height: 0,
   		position: 'absolute',
-  		overflow: 'hidden',
-  		padding: 0
+  		overflow: 'hidden'
 	});
 
 	// Portfolio
@@ -179,8 +178,7 @@ $(document).ready(function() {
 	items.slice(0, total).css({
   		height: 'inherit',
   		position: 'static',
-  		overflow: 'visible',
-  		padding: 'inherit'
+  		overflow: 'visible'
 	});
     $(this)[total >= items.length ? 'hide' : 'show']();
 }).click();

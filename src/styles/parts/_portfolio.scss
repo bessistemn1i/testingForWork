@@ -2,8 +2,10 @@
 	font-family: 'Roboto';
 	text-align: center;
 	background-color: #f2f5fa;
+	padding: 50px 0px 65px 0px;
 	h2, h3{
 		margin: 0 auto;
+		max-width: 245px;
 	}
 	h2{
 		font-size: 24px;
@@ -16,6 +18,7 @@
 		line-height: 24px;
 		color: #8a8a8a;
 		font-weight: 400;
+		padding: 13px 0px 37px 0px;	
 	}
 	.item{
 		background-color: #fff;
@@ -25,7 +28,7 @@
 		  font-weight: 400;
 		  line-height: 1.5;
 		  color: #212121;
-		  padding-top: 18px;
+		  padding: 30px 0px 18px 0px;
 		}
 		.descr{
 			font-size: 14px;
@@ -88,6 +91,7 @@
 		}
 	}
 	.send{
+		margin-top: 65px;
 		min-width: 315px;
 		text-transform: capitalize;
 	}

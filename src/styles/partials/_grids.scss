@@ -14,30 +14,35 @@ body{
       }
    }
    .slider{
-    @media(min-width: 240px){
+      @media(min-width: 240px){
 
+      }
     }
-   }
    .tools{
+      @media(240px){
+        .tool-block, .about-technology{
+          width: span(100%);
+        }
+      }
+    }
+  .applications{
+    @media(min-width: 240px){
+      width: span(100%);
+    }
+  }
+  .education{
+    @media(min-width: 240px){
+      width: span(100%);
+    }
+  }
+  .portfolio{
+    @media(min-width: 240px){
+      width: span(100%);
+    }
+  }
+  footer{
     @media(240px){
-      .tool-block, .about-technology{
-        width: span(100%);
-      }
+      width: span(100%);
     }
-    .applications{
-      @media(min-width: 240px){
-        width: span(100%);
-      }
-    }
-    .education{
-      @media(min-width: 240px){
-        width: span(100%);
-      }
-    }
-    .portfolio{
-      @media(min-width: 240px){
-        width: span(100%);
-      }
-    }
-   }
+  }
 }

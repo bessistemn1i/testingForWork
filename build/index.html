@@ -30,7 +30,6 @@
   				<source media="(min-width: 1200px)" srcset="../../img/logo/lajka-black@3x.png" alt="logo">
   				<img src="../../img/logo/lajka-black.png" alt="">
 			</picture>
-
 		</a>
 		<div class="navigation">
 			<nav class="mobile-menu">
@@ -40,7 +39,15 @@
 		<span></span>
 	</div>
 	<ul id="menu" class="closed-menu">
-		<li><a href="#"><img src="../../img/navigation/lajka-black.png" alt="lajka"></a></li>
+		<li><a href="#">
+			<picture>
+				<source media="(max-width: 767px)" srcset="../../img/navigation/lajka-black.png">
+  				<source media="(max-width: 1199px)" srcset="../../img/navigation/lajka-black@2x.png">
+  				<source media="(min-width: 1200px)" srcset="../../img/navigation/lajka-black@3x.png" alt="logo">
+  				<img src="../../img/logo/lajka-black.png" alt="">
+			</picture>
+			</a>
+		</li>
 		<li><a href="#">главная</a></li>
 		<li><a href="#">Продукты &amp; Услуги</a></li>
 		<li><a href="#">Почему VR/AR?</a></li>
@@ -54,16 +61,21 @@
 </nav>
 		</div>
 	</div>	
-	<div class="header-content">
+	<div class="header-content ct375px">
 		<h1>Пользовательские решения виртуальной реальности</h1>
 		<h2>Используйте конкурентные преимущества вашей отрасли</h2>
 		<button class="send">Обратитесь в службу</button>
+	</div>
+	<div class="header-content ct768px">
+		<h1>Индивидуальные решения в области виртуальной реальности</h1>
+		<h2>Используйте конкурентные преимущества вашей отрасли</h2>
+		<button class="send">Наши услуги</button>
 	</div>	
 </header>
 <section id="main-content">
 	<div class="slider">
 	<div class="slide">
-		<div class="slide-content">
+		<div class="slide-content ct375px">
 			<h5>new services</h5>
 			<h4>Artificial Neural Network</h4>
 			<p>Such systems learn to do tasks by considering examples, generally without task-specific programming.</p>
@@ -334,10 +346,16 @@
 
 
 	</div>
+	<div class="footer-wrapper">
 	<footer>
-
-</footer>
-
+		<h6>&copy; Лайка Интелект 2017</h6>
+		<ul>
+			<li><a href="#">Terms and conditions</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Disclaimer</a></li>
+		</ul>
+	</footer>
+</div>
 	<script src="../../js/main.js"></script>
 </body>
 </html>
