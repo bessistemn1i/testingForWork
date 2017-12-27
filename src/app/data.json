@@ -1,8 +1,43 @@
 {
-	"slides": [{
+	"slides375": [{
+		"src": "../../img/slider/slide1.jpeg",
 		"h5": "new services",
 		"h4": "Artificial Neural Network",
-		"p": "Such systems learn to do tasks by considering examples, generally without task-specific programming."
+		"p": "Such systems learn to do tasks by considering examples, generally without task-specific programming.",
+		"h4_768": "Искусственная нейронная сеть/Машинное обучение",
+		"p_768": "Система, генерирующая задачи в режиме реального времен, учитывая особенности поведения конкретного пользователя."
+		},
+		{
+		"src": "../../img/slider/slide2.jpeg",
+		"h5": "new services",
+		"h4": "Artificial Neural Network",
+		"p": "Such systems learn to do tasks by considering examples, generally without task-specific programming.",
+		"h4_768": "Искусственная нейронная сеть/Машинное обучение",
+		"p_768": "Система, генерирующая задачи в режиме реального времен, учитывая особенности поведения конкретного пользователя."
+		},
+		{
+		"src": "../../img/slider/slide1.jpeg",
+		"h5": "new services",
+		"h4": "Artificial Neural Network",
+		"p": "Such systems learn to do tasks by considering examples, generally without task-specific programming.",
+		"h4_768": "Искусственная нейронная сеть/Машинное обучение",
+		"p_768": "Система, генерирующая задачи в режиме реального времен, учитывая особенности поведения конкретного пользователя."
+		},
+		{
+		"src": "../../img/slider/slide2.jpeg",
+		"h5": "new services",
+		"h4": "Artificial Neural Network",
+		"p": "Such systems learn to do tasks by considering examples, generally without task-specific programming.",
+		"h4_768": "Искусственная нейронная сеть/Машинное обучение",
+		"p_768": "Система, генерирующая задачи в режиме реального времен, учитывая особенности поведения конкретного пользователя."
+		},
+		{
+		"src": "../../img/slider/slide1.jpeg",
+		"h5": "new services",
+		"h4": "Artificial Neural Network",
+		"p": "Such systems learn to do tasks by considering examples, generally without task-specific programming.",
+		"h4_768": "Искусственная нейронная сеть/Машинное обучение",
+		"p_768": "Система, генерирующая задачи в режиме реального времен, учитывая особенности поведения конкретного пользователя."
 		}	
 	]
 }

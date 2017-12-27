@@ -53,7 +53,7 @@ gulp.task('html:build', function(){
 		return require('./src/app/data.json')
 	}))
 	.pipe(nunjucksRender({
-		path: ['src/app/templates']
+		path: ['./src/app/templates']
 	}))
 	.pipe(gulp.dest(path.build.html)) 
 	.pipe(reload({stream: true}));

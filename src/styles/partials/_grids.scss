@@ -7,6 +7,25 @@ $susy: (
     'spread': 'narrow',
     'container-spread': 'narrow',
   );
+@mixin susy-use(
+  $config
+) {
+  //  parse and normalize any shorthand arguments
+  $config: susy-compile($config);
+
+  // record the global settings -
+  // and update the global variable with our new settings
+  $global: $susy;
+  $susy: map-merge($susy, $config) !global;
+
+  // any content inside this mixin
+  // will use the local settings
+  @content;
+}
+  $small: (
+      'columns': susy-repeat(2),
+      'gutters': 0
+    );
 body{
    header{
       @media(min-width: 240px){
@@ -19,9 +38,16 @@ body{
       }
     }
    .tools{
-      @media(240px){
+      @media(min-width:240px) and (max-width: 375px){
         .tool-block, .about-technology{
           width: span(100%);
+        }
+      }
+      @media(min-width: 376px){
+        @include susy-use($small){
+          .tool-block{
+            width: span(50%);
+          }  
         }
       }
     }

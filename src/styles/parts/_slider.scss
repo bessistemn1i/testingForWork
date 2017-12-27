@@ -1,56 +1,97 @@
 .slider{
 	.slick-slide{
-		&:nth-child(2n){
-  		background-image: url(../../img/slider/slide1.jpeg), linear-gradient(#289ceb, #289ceb);
-  		background-blend-mode: multiply;
-  		}
-  		&:nth-child(2n + 1){
-  		background-image: url(../../img/slider/slide2.jpeg), linear-gradient(#289ceb, #289ceb);
-  		background-blend-mode: multiply;
-  		}
   		.slide{
-  			@media(min-width: 240px) and(max-width: 375px){
-  				
+  			position: relative;
+  			.gradient{
+  				background: linear-gradient(rgba(40,156,235, .3), rgba(40,156,235, .3));
+  				 display: inline-block; 
   			}
-			.slide-content{
-				padding: 20px 0px 0px 30px;
-				h5, h4, p{
-					max-width: 315px;
+  			img{
+  				position: relative;
+  				z-index: -1;
+				max-height: 380px;
+				width: 100%;
+				@media(min-width: 240px) and(max-width: 768px){
+					height: 325px;
+				}
+	  		}
+
+	  		.slide-content{
+				position: absolute;
+				top: 20px;
+				z-index: 9999;
+	  			h5,h4,p{
 					color: #fff;
 					margin-top: 0;
 					margin-bottom: 0;
 					text-align: left;
 					font-family: 'Roboto';
-				}
-				h5{
-					font-family: Helvetica;
-					font-size: 11px;
+	  			}
+	  			h5{
+	  				font-size: 11px;
 					letter-spacing: 0.2px;
-					text-transform: uppercase;
 					padding-bottom: 27px;
-				}
-				h4{
+					font-family: Helvetica;
+					text-transform: uppercase;
+	  			}
+	  			h4{
 				  	font-size: 24px;
+					padding-bottom: 10px;
 					font-weight: 500;
 					line-height: 1.25;
-					padding-bottom: 10px;
-				}
-				p{
-					font-size: 16px;
-					line-height: 1.5;
+	  			}
+	  			p{
+	  				font-size: 16px;
 					padding-bottom: 38px;
+					line-height: 1.5;
 					font-weight: 300;
-				}
-			}
+	  			}
+	  		}
+	  		 .ct375px, .ct768px{
+  				display: none;
+  			}
 			.send{
 				background-color: #fff;
 				color: #f3b;
-				margin: 0px auto 57px auto;
-				max-width: 315px;
-				min-width: 240px;
+				position: absolute;
+				bottom: 57px;
+				left: 50%;
+				margin-left: -157.5px;
+				width: 315px;
 				display: block;
 			}
+		@media(min-width: 240px) and(max-width: 767px){
+			.ct375px{
+				display: block;
+				left: 50%;
+				margin-left: -157px;
+				h5, h4, p{
+					max-width: 315px;
+				}
+			}
 		}
+		@media(min-width: 767px){
+			.ct768px{
+				display: block;
+				min-width: 645px;
+				@include scut-center-transform(x);
+				h5, h4, p{
+					max-width: 645px;
+				}
+				h5{
+					display: block;
+					text-align: center;
+					font-weight: 300;
+				}
+				h4{
+
+				}
+				p{
+
+				}
+			}
+		}
+  		}
 	}
 	.slick-dots{
 		list-style: none;

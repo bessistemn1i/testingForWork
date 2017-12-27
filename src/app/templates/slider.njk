@@ -1,42 +1,21 @@
 <div class="slider">
-	<div class="slide">
-		<div class="slide-content ct375px">
-			<h5>new services</h5>
-			<h4>Artificial Neural Network</h4>
-			<p>Such systems learn to do tasks by considering examples, generally without task-specific programming.</p>
+
+	{% for slide in slides375 %}
+	<div class="slide slide375">
+		<div class="gradient">
+			<img src="{{slide.src}}" alt="">
+			<div class="slide-content ct375px">
+				<h5>{{slide.h5}}</h5>
+				<h4>{{slide.h4}}</h4>
+				<p>{{slide.p}}</p>
+			</div>
+			<div class="slide-content ct768px">
+				<h5>{{slide.h5}}</h5>
+				<h4>{{slide.h4_768}}</h4>
+				<p>{{slide.p_768}}</p>
+			</div>
+			<button class="send">Share your vision with us</button>
 		</div>
-		<button class="send">Share your vision with us</button>
 	</div>
-	<div class="slide">
-		<div class="slide-content">
-			<h5>new services</h5>
-			<h4>Artificial Neural Network</h4>
-			<p>Such systems learn to do tasks by considering examples, generally without task-specific programming.</p>
-		</div>
-		<button class="send">Share your vision with us</button>
-	</div>
-	<div class="slide">
-		<div class="slide-content">
-			<h5>new services</h5>
-			<h4>Artificial Neural Network</h4>
-			<p>Such systems learn to do tasks by considering examples, generally without task-specific programming.</p>
-		</div>
-		<button class="send">Share your vision with us</button>
-	</div>
-	<div class="slide">
-		<div class="slide-content">
-			<h5>new services</h5>
-			<h4>Artificial Neural Network</h4>
-			<p>Such systems learn to do tasks by considering examples, generally without task-specific programming.</p>
-		</div>
-		<button class="send">Share your vision with us</button>
-	</div>
-	<div class="slide">
-		<div class="slide-content">
-			<h5>new services</h5>
-			<h4>Artificial Neural Network</h4>
-			<p>Such systems learn to do tasks by considering examples, generally without task-specific programming.</p>
-		</div>
-		<button class="send">Share your vision with us</button>
-	</div>
+	{% endfor %}
 </div>
