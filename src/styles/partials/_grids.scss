@@ -3,7 +3,7 @@
 @import "../../bower_components/susy/sass/_susy";
 $susy: (
     'columns': susy-repeat(12),
-    'gutters': 0.25,
+    'gutters': 0.6,
     'spread': 'narrow',
     'container-spread': 'narrow',
   );
@@ -23,7 +23,7 @@ $susy: (
   @content;
 }
   $small: (
-      'columns': susy-repeat(2),
+      'columns': susy-repeat(12),
       'gutters': 0
     );
 body{
@@ -38,15 +38,23 @@ body{
       }
     }
    .tools{
+      margin: 0 auto;
       @media(min-width:240px) and (max-width: 375px){
         .tool-block, .about-technology{
-          width: span(100%);
+          width: span(12);
         }
       }
       @media(min-width: 376px){
+        max-width: 630px;
         @include susy-use($small){
           .tool-block{
-            width: span(50%);
+            width: span(6);
+            float: left;
+            margin-bottom: 56px;
+          }
+          .about-technology{
+            width: span(12);
+            clear: both;
           }  
         }
       }

@@ -2,6 +2,19 @@
 	font-family: 'Roboto';
 	text-align: center;
 	padding: 53px 0px;
+	.ct375, .ct768{
+		display: none;
+	}
+	@media(min-width: 240px) and (max-width: 375px){
+		.ct375{
+			display: block;
+		}
+	}
+	@media(min-width: 376px){
+		.ct768{
+			display: block;
+		}
+	}
 	h2{
 	  font-size: 24px;
 	  font-weight: 500;
@@ -16,12 +29,12 @@
 	  font-weight: 400;
 	  margin-bottom: 38px;
 	}
-	h4, p{
-		max-width: 240px;
-		margin: 0 auto;
-	}
 	.tool-block{
 		margin: 0;
+		h4, p{
+			max-width: 240px;
+			margin: 0 auto;
+		}
 		img{
 			display: block;
 			border: solid 2px #e6e6e6;
@@ -29,13 +42,25 @@
 			padding: 20px;
 			margin: 0 auto;
 			margin-bottom: 25px;
+			@media(min-width: 240px) and (max-width: 767px){
+				height: 40px;
+				width: 42px;
+			}
+			@media(min-width: 768px) and (max-width: 1199px){
+				height: 70px;
+				width: 84px;
+			}
+			@media(min-width: 1200px){
+				height: 105px;
+				width: 126px;
+			}
 		}
 		h4{
 		  font-size: 16px;
 		  line-height: 1.5;
 		  padding-bottom: 12px;
 		}
-		p{
+		p.ct375{
 		  font-size: 14px;
 		  line-height: 1.29;
 		  color: #8a8a8a;
@@ -43,8 +68,29 @@
 		}
 	}
 	.about-technology{
+		@media(min-width: 240px) and(max-width: 375px){
+			p{
+				max-width: 315px;
+			}
+		}
+		@media(min-width: 376px){
+			.ct768{
+				max-width: 610px;
+				margin: 0 auto;
+				p:first-child{
+					padding-bottom: 0;
+					&:after{
+						content: '';
+						display: block;
+						margin: 23px auto;
+						width: 36px;
+						height: 1px;
+						background-color: #e6e6e6;
+					}
+				}
+			}
+		}
 		p{
-			max-width: 315px;
 			margin: 0 auto;
 			font-size: 16px;
 			line-height: 1.5;
