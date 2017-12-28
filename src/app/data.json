@@ -42,73 +42,101 @@
 	],
 	"swiper": [{
 		"swiperSrcMin": "../../img/tools/application/group-2-copy-2.png",
-		"swiperSrcMiddle": "../../img/tools/application/group-2-copy-2@2x.png",
-		"swiperSrcMax": "../../img/tools/application/group-2-copy-2@3x.png",
 		"h3": "Some heading",
-		"p": "Some description"
+		"p_375": "Some description",
+		"p_768": "Съемка панорамных видео, создание полноценных видео"
 	},
 		{
 		"swiperSrcMin": "../../img/tools/application/group-3-copy-2.png",
-		"swiperSrcMiddle": "../../img/tools/application/group-3-copy-2@2x.png",
-		"swiperSrcMax": "../../img/tools/application/group-3-copy-2@3x.png",
 		"h3": "Some heading",
-		"p": "Some description"
+		"p_375": "Some description",
+		"p_768": "Виртуальные спортивные тренировки, реалистичные онлайн-трансляции"
 	},
 	{
 		"swiperSrcMin": "../../img/tools/application/group-3-copy-3.png",
-		"swiperSrcMiddle": "../../img/tools/application/group-3-copy-3@2x.png",
-		"swiperSrcMax": "../../img/tools/application/group-3-copy-3@3x.png",
 		"h3": "Промышленность",
-		"p": "Инновационные технологии для вашей отрасли"
+		"p_375": "Инновационные технологии для вашей отрасли",
+		"p_768": "Виртуальные спортивные тренировки, реалистичные онлайн-трансляции"
 	},
 	{
 		"swiperSrcMin": "../../img/tools/application/group-3-copy-4.png",
-		"swiperSrcMiddle": "../../img/tools/application/group-3-copy-4@2x.png",
-		"swiperSrcMax": "../../img/tools/application/group-3-copy-4@3x.png",
 		"h3": "Some heading",
-		"p": "Some description"
+		"p_375": "Some description",
+		"p_768": "Проектирование, визуализация расчетов и отдельных процессов взаимодействия с объектами"
 	},
 	{
 		"swiperSrcMin": "../../img/tools/application/group-3-copy-5.png",
-		"swiperSrcMiddle": "../../img/tools/application/group-3-copy-5@2x.png",
-		"swiperSrcMax": "../../img/tools/application/group-3-copy-5@3x.png",
 		"h3": "Образование",
-		"p": "Обучающие программы, тесты и экзамены"
+		"p_375": "Обучающие программы, тесты и экзамены",
+		"p_768": "Проектирование, визуализация расчетов и отдельных процессов взаимодействия с объектами"
 	},
 	{
 		"swiperSrcMin": "../../img/tools/application/group-3-copy-6.png",
-		"swiperSrcMiddle": "../../img/tools/application/group-3-copy-6@2x.png",
-		"swiperSrcMax": "../../img/tools/application/group-3-copy-6@3x.png",
 		"h3": "Some heading",
-		"p": "Some description"
+		"p_375": "Some description",
+		"p_768": "Проектирование, визуализация расчетов и отдельных процессов взаимодействия с объектами"
 	},
 	{
 		"swiperSrcMin": "../../img/tools/application/group-3-copy-7.png",
-		"swiperSrcMiddle": "../../img/tools/application/group-3-copy-7@2x.png",
-		"swiperSrcMax": "../../img/tools/application/group-3-copy-7@3x.png",
 		"h3": "Спорт",
-		"p": "Виртуальные спортивные тренировки, реалистичные онлайн-трансляции"
+		"p_375": "Виртуальные спортивные тренировки, реалистичные онлайн-трансляции",
+		"p_768": "Съемка панорамных видео, создание полноценных видео"
 	},
 	{
 		"swiperSrcMin": "../../img/tools/application/group-3-copy-8.png",
-		"swiperSrcMiddle": "../../img/tools/application/group-3-copy-8@2x.png",
-		"swiperSrcMax": "../../img/tools/application/group-3-copy-8@3x.png",
 		"h3": "ТВ/Медиа",
-		"p": "Съемка панорамных видео, создание полноценных видео"
+		"p_375": "Съемка панорамных видео, создание полноценных видео",
+		"p_768": "Проектирование, визуализация расчетов и отдельных процессов взаимодействия с объектами"
 	},
 	{
 		"swiperSrcMin": "../../img/tools/application/group-3-copy.png",
-		"swiperSrcMiddle": "../../img/tools/application/group-3-copy@2x.png",
-		"swiperSrcMax": "../../img/tools/application/group-3-copy@3x.png",
 		"h3": "Some heading",
-		"p": "Some description"
+		"p_375": "Some description",
+		"p_768": "Съемка панорамных видео, создание полноценных видео"
 	},
 	{
 		"swiperSrcMin": "../../img/tools/application/group-2-copy.png",
-		"swiperSrcMiddle": "../../img/tools/application/group-2-copy@2x.png",
-		"swiperSrcMax": "../../img/tools/application/group-2-copy@3x.png",
 		"h3": "Энергетика",
-		"p": "Инновационные технологии для вашей отрасли"
+		"p_375": "Инновационные технологии для вашей отрасли",
+		"p_768": "Виртуальные спортивные тренировки, реалистичные онлайн-трансляции"
 	}
+	],
+	"portfolio":[
+		{
+			"id": "first",
+			"h4": "Конечный продукт",
+			"videoSrc": "video/1.mp4",
+			"description": "Виртуальный тур по синагоге, разрушенной в середине XX века. Восстановленная в электронном мире в соответствии с материалами из архивов, виртуальная синагога наглядно продемонстрировала будущие возможности для музеев, галерей и всей образовательной системы."
+		},
+		{
+			"id": "second",
+			"h4": "Управление складскими операциями в виртуальной реальности",
+			"videoSrc": "video/2.mp4",
+			"description": "Симулятор виртуального склада разработан для отработки навыков работы с учетом системы управления складом без риска травматизма."
+		},
+		{
+			"id": "third",
+			"h4": "Языковая подготовка в виртуальной реальности",
+			"videoSrc": "video/3.mp4",
+			"description": "Тренажер предлагает оригинальный и невероятно увлекательный способ изучения иностранного языка, который сокращает время обучения и гарантирует качественный результат."
+		},
+		{
+			"id": "fourth",
+			"h4": "Конечный продукт",
+			"videoSrc": "video/4.mp4",
+			"description": "Виртуальный тур по синагоге, разрушенной в середине XX века. Восстановленная в электронном мире в соответствии с материалами из архивов, виртуальная синагога наглядно продемонстрировала будущие возможности для музеев, галерей и всей образовательной системы."
+		},
+		{
+			"id": "fifth",
+			"h4": "Управление складскими операциями в виртуальной реальности",
+			"videoSrc": "video/5.mp4",
+			"description": "Симулятор виртуального склада разработан для отработки навыков работы с учетом системы управления складом без риска травматизма."
+		},
+		{
+			"id": "six",
+			"h4": "Языковая подготовка в виртуальной реальности",
+			"videoSrc": "video/6.mp4",
+			"description": "Тренажер предлагает оригинальный и невероятно увлекательный способ изучения иностранного языка, который сокращает время обучения и гарантирует качественный результат."
+		}
 	]
 }

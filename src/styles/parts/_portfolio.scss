@@ -20,6 +20,20 @@
 		font-weight: 400;
 		padding: 13px 0px 37px 0px;	
 	}
+	.ct375, .ct768{
+		display: none;
+	}
+	@media(min-width: 240px) and (max-width: 767px){
+		.ct375{
+			display: block;
+		}
+	}
+	@media(min-width:768px){
+		.ct768{
+			display: block;
+			max-width: 645px;
+		}
+	}
 	.item{
 		background-color: #fff;
 		position: relative;
@@ -42,6 +56,11 @@
 			overflow: hidden;
 			margin-top: 15px;
 			max-width: 315px;
+		}
+		@media(min-width:376px){
+			.descr{
+				max-width: 615px;
+			}
 		}
 		.read-more{
 			display: block;

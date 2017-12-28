@@ -5,8 +5,20 @@
 	text-align: center;
   padding: 78px 0px 65px 0px;
   h2,h3{
-  	display: block;
   	margin: 0 auto;
+  }
+  .ct375, .ct768{
+    display: none;
+  }
+  @media(min-width: 240px) and (max-width: 767px){
+    .ct375{
+      display: block;
+    }
+  }
+  @media(min-width:768px){
+    .ct768{
+      display: block;
+    }
   }
   h2{
 	font-size: 24px;

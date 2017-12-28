@@ -60,12 +60,11 @@
 				<div class="swiper-slide">
 					<picture>
 						<source media="(max-width: 768px)" srcset="{{swiperSlide.swiperSrcMin}}">
-	  					<source media="(max-width: 1199px)" srcset="{{swiperSlide.swiperSrcMiddle}}">
-	  					<source media="(min-width: 1200px)" srcset="{{swiperSlide.swiperSrcMax}}" alt="tools">
 	  					<img src="{{swiperSlide.swiperSrcMin}}" alt="">
 					</picture>
 					<h3>{{swiperSlide.h3}}</h3>
-					<p>{{swiperSlide.p}}</p>
+					<p class="ct375">{{swiperSlide.p_375}}</p>
+					<p class="ct768">{{swiperSlide.p_768}}</p>
 				</div>
 				{% endfor %}
 			</div>

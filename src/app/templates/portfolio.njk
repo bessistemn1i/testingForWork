@@ -1,47 +1,15 @@
 <div class="portfolio-wrapper">
 	<h2>Портфолио</h2>
-	<h3>Инновационные технологии для вашей отрасли</h3>
+	<h3 class="ct375">Инновационные технологии для вашей отрасли</h3>
+	<h3 class="ct768">Наши опытные специалисты в области VR разработки помогут Вам воплотить в жизнь идею любого масштаба и любой сложности. </h3>
+	{% for portfolioItem in portfolio %}
 	<div class="item">
-		<h4>Конечный продукт</h4>
-		<video class="video-js vjs-big-play-centered portfolio-video" id="first">
-			<source src="video/1.mp4" type="video/mp4">
+		<h4>{{portfolioItem.h4}}</h4>
+		<video class="video-js vjs-big-play-centered portfolio-video" id="{{portfolioItem.id}}">
+			<source src="{{portfolioItem.videoSrc}}" type="video/mp4">
 		</video>
-		<p class="descr">Виртуальный тур по синагоге, разрушенной в середине XX века. Восстановленная в электронном мире в соответствии с материалами из архивов, виртуальная синагога наглядно продемонстрировала будущие возможности для музеев, галерей и всей образовательной системы.</p>
+		<p class="descr">{{portfolioItem.description}}</p>
 	</div>
-	<div class="item">
-		<h4>Управление складскими операциями в виртуальной реальности</h4>
-		<video class="video-js vjs-big-play-centered portfolio-video" id="second">
-			<source src="video/2.mp4" type="video/mp4">
-		</video>
-		<p class="descr">Симулятор виртуального склада разработан для отработки навыков работы с учетом системы управления складом без риска травматизма.</p>
-	</div>
-	<div class="item">
-		<h4>Языковая подготовка в виртуальной реальности</h4>
-		<video class="video-js vjs-big-play-centered portfolio-video" id="third">
-			<source src="video/3.mp4" type="video/mp4">
-		</video>
-		<p class="descr">Тренажер предлагает оригинальный и невероятно увлекательный способ изучения иностранного языка, который сокращает время обучения и гарантирует качественный результат.</p>
-	</div>
-	<div class="item">
-		<h4>Конечный продукт</h4>
-		<video class="video-js vjs-big-play-centered portfolio-video" id="fourth">
-			<source src="video/4.mp4" type="video/mp4">
-		</video>
-		<p class="descr">Виртуальный тур по синагоге, разрушенной в середине XX века. Восстановленная в электронном мире в соответствии с материалами из архивов, виртуальная синагога наглядно продемонстрировала будущие возможности для музеев, галерей и всей образовательной системы.</p>
-	</div>
-	<div class="item">
-		<h4>Управление складскими операциями в виртуальной реальности</h4>
-		<video class="video-js vjs-big-play-centered portfolio-video" id="fifth">
-			<source src="video/5.mp4" type="video/mp4">
-		</video>
-		<p class="descr">Симулятор виртуального склада разработан для отработки навыков работы с учетом системы управления складом без риска травматизма.</p>
-	</div>
-	<div class="item">
-		<h4>Языковая подготовка в виртуальной реальности</h4>
-		<video class="video-js vjs-big-play-centered portfolio-video" id="six">
-			<source src="video/6.mp4" type="video/mp4">
-		</video>
-		<p class="descr">Тренажер предлагает оригинальный и невероятно увлекательный способ изучения иностранного языка, который сокращает время обучения и гарантирует качественный результат.</p>
-	</div>
+	{% endfor %}
 	<button class="send">load more</button>
 </div>

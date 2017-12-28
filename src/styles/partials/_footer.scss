@@ -50,5 +50,15 @@
 				}
 			}
 		}
+		@media(min-width: 376px){
+			max-width: 360px;
+			ul{
+				li{
+					&:last-child{
+						margin: 0 0 0 15px;
+					}
+				}
+			}
+		}
 	}
 }
