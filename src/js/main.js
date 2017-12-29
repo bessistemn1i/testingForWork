@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 	$('.nav-icon').click(function(){
 		$(this).toggleClass('open');
-		$('#menu').fadeToggle('opened-menu');
+		$('.closed-menu').fadeToggle();
 	});
 
 // slider 
